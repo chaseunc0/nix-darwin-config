@@ -101,6 +101,7 @@
       "android-commandlinetools"
       "github"
       "librewolf"
+      "the-unarchiver"
       "karabiner-elements"
       "bartender"
       "keepassxc"
