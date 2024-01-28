@@ -4,7 +4,9 @@
 
   # Configure nix
   nix = {
-    autoOptimiseStore = true;
+    settings = {
+      auto-optimise-store = true;
+    };
     extraOptions = "extra-experimental-features = nix-command flakes";
   };
   # Configure system packages
