@@ -31,7 +31,6 @@
     enable = true;
     config = {
       focus_follows_mouse         = "autoraise";
-      mouse_follows_focus         = "off";
       layout                      = "bsp";
       window_placement            = "second_child";
       window_opacity              = "on";
