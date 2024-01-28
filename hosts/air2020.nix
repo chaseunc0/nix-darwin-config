@@ -2,6 +2,11 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
 
+  # Configure nix
+  nix = {
+    autoOptimiseStore = true;
+    extraOptions = "extra-experimental-features = nix-command flakes";
+  };
   # Configure system packages
   environment.systemPackages = with pkgs; [
     neovim
