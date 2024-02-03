@@ -2,6 +2,13 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
 
+  # Configure nix
+  nix = {
+    settings = {
+      auto-optimise-store = true;
+    };
+    extraOptions = "extra-experimental-features = nix-command flakes";
+  };
   # Configure system packages
   environment.systemPackages = with pkgs; [
     neovim
@@ -31,7 +38,7 @@
     enable = true;
     config = {
       focus_follows_mouse         = "autoraise";
-      mouse_follows_focus         = "off";
+      mouse_modifier              = "cmd";
       layout                      = "bsp";
       window_placement            = "second_child";
       window_opacity              = "on";
@@ -95,6 +102,7 @@
       "android-commandlinetools"
       "github"
       "librewolf"
+      "the-unarchiver"
       "karabiner-elements"
       "bartender"
       "keepassxc"
