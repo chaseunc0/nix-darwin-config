@@ -89,6 +89,7 @@
       "mas"
       "switchaudio-osx"
       "borders"
+      "cryfs"
     ];
     casks = [
       "android-commandlinetools"
