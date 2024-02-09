@@ -13,6 +13,7 @@
     shellAliases = {
       clearls = "clear && ls -A";
       clearn = "clear && neofetch";
+      lsa = "ls -A";
       vinix = "nvim $HOME/.config/nix-darwin/flake.nix";
       vihm = "nvim /Users/radioaddition/.config/home-manager/home.nix";
       vivi = "nvim /Users/radioaddition/.config/nvim/init.vim";
